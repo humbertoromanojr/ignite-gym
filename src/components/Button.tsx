@@ -1,9 +1,28 @@
-import { VStack } from 'native-base'
+import { Button as NativeBaseButton, IButtonProps, Text } from 'native-base'
 
-export function Button() {
+type Props = IButtonProps & {
+  title: string;
+}
+
+export function Button({ title, ...rest }: Props) {
   return (
-    <VStack>
+    <NativeBaseButton 
+      bg="green.700"
+      rounded="sm"
+      _pressed={{ bg: "green.500" }}
+      w="90%"
+      h={14}
+      my={6}
 
-    </VStack>
+      {...rest}
+    >
+      <Text 
+        color="white" 
+        fontFamily="heading" 
+        fontSize="2xl"
+      >
+        {title}
+      </Text>
+    </NativeBaseButton>
   )
 }
