@@ -25,6 +25,7 @@ Project Ignite Gym
 -   [ReactJS](https://reactjs.org/)
 -   [React Native](https://reactnative.dev/)
 -   [Expo](https://expo.dev/)
+    - [Google fonts](https://docs.expo.dev/guides/using-custom-fonts/#using-a-google-font)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [Babel Plugin Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 
