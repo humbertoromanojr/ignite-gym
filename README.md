@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="https://drive.google.com/uc?export=view&id=1u-J5lvj7EH76_gp7eUKwQrM7fR3w0Si2" alt="" width="100%" border="0" />
 <br>
-Project Ignite Gym
+REACT NATIVE - Project Ignite Gym
 </h1>
 
 
@@ -19,19 +19,20 @@ Project Ignite Gym
 
 
 ### MOBILE LIBRARIES
-- <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — A JavaScript library for building user interfaces
 - <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React.
 
--   [ReactJS](https://reactjs.org/)
 -   [React Native](https://reactnative.dev/)
     - [React Native SVG](https://github.com/software-mansion/react-native-svg)
     - [React Native SVG Transformer](https://github.com/kristerkari/react-native-svg-transformer)
     - [React Native Safe Area Context](https://github.com/th3rdwave/react-native-safe-area-context)
+    - [React Native Screen](https://github.com/software-mansion/react-native-screens)
 -   [Expo](https://expo.dev/)
     - [Google fonts](https://docs.expo.dev/guides/using-custom-fonts/#using-a-google-font)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [NativeBase](https://nativebase.io/)
 -   [Babel Plugin Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
+-   [React Navigation](https://reactnavigation.org/docs/getting-started/)
+    - [React Navigation Native Stack](https://reactnavigation.org/docs/hello-react-navigation)
 
 
 ## Demonstration
