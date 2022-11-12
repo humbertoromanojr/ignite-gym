@@ -28,8 +28,8 @@ export function SignIn() {
           </Text>
         </Center>
 
-        <Center>
-          <Heading color="gray.100">
+        <Center mb={10}>
+          <Heading mb={6} color="gray.100">
             Acesse sua conta
           </Heading>
 
