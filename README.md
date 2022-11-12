@@ -24,14 +24,14 @@ Project Ignite Gym
 
 -   [ReactJS](https://reactjs.org/)
 -   [React Native](https://reactnative.dev/)
+    - [React Native SVG](https://github.com/software-mansion/react-native-svg)
+    - [React Native SVG Transformer](https://github.com/kristerkari/react-native-svg-transformer)
+    - [React Native Safe Area Context](https://github.com/th3rdwave/react-native-safe-area-context)
 -   [Expo](https://expo.dev/)
     - [Google fonts](https://docs.expo.dev/guides/using-custom-fonts/#using-a-google-font)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [NativeBase](https://nativebase.io/)
-    - [React Native SVG](https://docs.nativebase.io/install-expo)
-    - [React Native Safe Area Context](https://docs.nativebase.io/install-expo)
 -   [Babel Plugin Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
-
 
 
 ## Demonstration
