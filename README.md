@@ -27,6 +27,9 @@ Project Ignite Gym
 -   [Expo](https://expo.dev/)
     - [Google fonts](https://docs.expo.dev/guides/using-custom-fonts/#using-a-google-font)
 -   [Typescript](https://www.typescriptlang.org/)
+-   [NativeBase](https://nativebase.io/)
+    - [React Native SVG](https://docs.nativebase.io/install-expo)
+    - [React Native Safe Area Context](https://docs.nativebase.io/install-expo)
 -   [Babel Plugin Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 
 
@@ -73,7 +76,8 @@ GitLab: https://gitlab.com/hjrdev <br />
 <img src="https://drive.google.com/uc?export=view&id=160InxEPlK0IynTEGEmQJDETo_8grncjI" alt="" width="22" border="0" />: astronomi@gmail.com <br />
 <br />
 
-Made with :heart: and lots of animation by :guitar: Humberto Jr :guitar:
+Made with <img src="https://drive.google.com/uc?export=view&id=1bb7UVQdQc1QpCIGqaI2bh4YdAn6Ihah-" alt="" width="22" border="0" /> and lots of animation by :guitar: Humberto Jr :guitar:
+
 
 ##
 <img src="https://drive.google.com/uc?export=view&id=1lAPQY5CLSU4ofNI7-kTS8SMtKo6NZt-B" alt="" width="22" border="0" />  Read more below  <img src="https://drive.google.com/uc?export=view&id=1lAPQY5CLSU4ofNI7-kTS8SMtKo6NZt-B" alt="" width="22" border="0" />
