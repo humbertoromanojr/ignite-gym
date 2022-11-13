@@ -14,7 +14,7 @@ export function Input({...rest}: IInputProps) {
         borderWidth: 2,
         borderColor: 'green.500',
       }}
-      h={14}
+      w="full" h={14}
       mx={4}
       mb={4}
 

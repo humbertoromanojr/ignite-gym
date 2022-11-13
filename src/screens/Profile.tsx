@@ -17,7 +17,7 @@ export function Profile() {
       <ScreenHeader title="Perfil" />
 
       <ScrollView contentContainerStyle={{ paddingBottom: 36 }}>
-        <Center mt={5} px={5}>
+        <Center mt={5} px={6}>
           {
             photoIsLoading ?
               <Skeleton 
@@ -51,9 +51,8 @@ export function Profile() {
             value='seuemail@gmail.com'
             isDisabled
           />
-  
 
-          <Heading color="gray.200" alignSelf="flex-start" fontSize="md" mb={2} px={5} mt={6}>
+          <Heading color="gray.200" alignSelf="flex-start" fontSize="md" mb={2} px={1} mt={6}>
             Alterar senha
           </Heading>
 
