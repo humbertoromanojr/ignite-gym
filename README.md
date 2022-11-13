@@ -1,7 +1,9 @@
 <h1 align="center">
+REACT NATIVE
   <img src="https://drive.google.com/uc?export=view&id=1u-J5lvj7EH76_gp7eUKwQrM7fR3w0Si2" alt="" width="100%" border="0" />
 <br>
-REACT NATIVE - Project Ignite Gym
+
+PROJECT IGNITE GYM
 </h1>
 
 
@@ -19,7 +21,10 @@ REACT NATIVE - Project Ignite Gym
 
 
 ### MOBILE LIBRARIES
-- <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React.
+- <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React. React Native combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces.
+<br /><br />
+Use a little—or a lot. You can use React Native today in your existing Android and iOS projects or you can create a whole new app from scratch.
+<br /><br />
 
 -   [React Native](https://reactnative.dev/)
     - [React Native SVG](https://github.com/software-mansion/react-native-svg)
