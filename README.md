@@ -38,6 +38,7 @@ Use a little—or a lot. You can use React Native today in your existing Android
 -   [Babel Plugin Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
 -   [React Navigation](https://reactnavigation.org/docs/getting-started/)
     - [React Navigation Native Stack](https://reactnavigation.org/docs/hello-react-navigation)
+    - [React Navigation Bottom Tab Navigator](https://reactnavigation.org/docs/upgrading-from-5.x/#bottom-tab-navigator)
 
 
 ## Demonstration
