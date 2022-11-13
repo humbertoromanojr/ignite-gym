@@ -6,13 +6,13 @@ import { Button } from '@components/Button'
 import LogoSvg from '@assets/logo.svg'
 import BackgroundImg from '@assets/background.png'
 
-export function SignUp() {
+export function SignUp({ navigation }) {
   return (
     <ScrollView 
       contentContainerStyle={{ flexGrow: 1 }}
       showsVerticalScrollIndicator={false}
     >
-      <VStack flex={1} bg="gray.700" px={10} pb={10}>
+      <VStack flex={1} px={10} pb={10}>
         <Image 
           source={BackgroundImg} 
           resizeMode='contain' 
@@ -54,7 +54,7 @@ export function SignUp() {
         </Center>
 
         <Center mt={28}>
-          <Button title="Voltar para o login" variant="outline" />
+          <Button title="Voltar para o login" variant="outline" onPress={() => navigation.navigate('signIn')} />
         </Center>
       </VStack>
     </ScrollView>
