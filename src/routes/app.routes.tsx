@@ -1,3 +1,4 @@
+import { Platform } from 'react-native'
 import { useTheme } from 'native-base'
 import { 
   createBottomTabNavigator, 
@@ -37,6 +38,10 @@ export function AppRoutes() {
       tabBarInactiveTintColor: colors.gray[200],
       tabBarStyle: {
         backgroundColor: colors.gray[600],
+        borderTopWidth: .5,
+        height: Platform.OS === 'android' ? 'auto' : 96,
+        paddingBottom: sizes[8],
+        paddingTop: sizes[8]
       }
     }}>
       <Screen 
