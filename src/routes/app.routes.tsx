@@ -25,7 +25,7 @@ import HistorySvg from '@assets/history.svg'
 import ProfileSvg from '@assets/profile.svg'
 
 export function AppRoutes() {
-  const { sizes } = useTheme()
+  const { sizes, colors } = useTheme()
 
   const iconSize = sizes[10]
 
@@ -33,6 +33,8 @@ export function AppRoutes() {
     <Navigator screenOptions={{
       headerShown: false,
       tabBarShowLabel: false,
+      tabBarActiveTintColor: colors.green[500],
+      tabBarInactiveTintColor: colors.gray[200]
     }}>
       <Screen 
         name="home"
