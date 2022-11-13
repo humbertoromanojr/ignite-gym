@@ -1,5 +1,5 @@
 import { TouchableOpacity } from 'react-native'
-import { VStack, HStack, Heading, Icon, Text } from 'native-base'
+import { VStack, HStack, Heading, Icon, Text, Image } from 'native-base'
 import { Feather } from '@expo/vector-icons'
 import { useNavigation } from '@react-navigation/native'
 
@@ -34,6 +34,17 @@ export function Exercise() {
             </Text>
           </HStack>
         </HStack>
+      </VStack>
+
+      <VStack p={8}>
+        <Image 
+          w="full" h={80}
+          source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3nymzg_sWcIlh58heTh2cYoa2KKashsuA5YKP9QPHmni-1sRfSXXtd7E17FUs8iNZLY&usqp=CAU' }}
+          alt="Ilustração de como se deve malhar remada unilateral"
+          mb={3}
+          resizeMode="cover"
+          rounded="lg"
+        />
       </VStack>
     </VStack>
   )
