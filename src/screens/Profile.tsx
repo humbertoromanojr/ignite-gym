@@ -15,70 +15,68 @@ export function Profile() {
   return (
     <VStack flex={1}>
       <ScreenHeader title="Perfil" />
-      <ScrollView>
-      <Center mt={5} px={5}>
-        {
-          photoIsLoading ?
-            <Skeleton 
-              w={PHOTO_SIZE} 
-              h={PHOTO_SIZE} 
-              rounded="full" 
-              startColor="gray.500"
-              endColor="gray.400"
-            />
-            :
-            <UserPhoto 
-              source={{ uri: 'https://github.com/humbertoromanojr.png' }}
-              alt="Imagem do usuário"
-              size={PHOTO_SIZE} 
-              mr={4}
-            />
-        }
 
-        <TouchableOpacity>
-          <Text color="gray.200" fontWeight="bold" fontSize="md" mb={8} mt={2}>
-            Alterar foto
-          </Text>
-        </TouchableOpacity>
+      <ScrollView contentContainerStyle={{ paddingBottom: 36 }}>
+        <Center mt={5} px={5}>
+          {
+            photoIsLoading ?
+              <Skeleton 
+                w={PHOTO_SIZE} 
+                h={PHOTO_SIZE} 
+                rounded="full" 
+                startColor="gray.500"
+                endColor="gray.400"
+              />
+              :
+              <UserPhoto 
+                source={{ uri: 'https://github.com/humbertoromanojr.png' }}
+                alt="Imagem do usuário"
+                size={PHOTO_SIZE} 
+                mr={4}
+              />
+          }
 
-        <Input 
-          bg="gray.600"
-          placeholder='Nome'
-        />
-        <Input 
-          bg="gray.600"
-          value='seuemail@gmail.com'
-          isDisabled
-        />
-      </Center>
+          <TouchableOpacity>
+            <Text color="gray.200" fontWeight="bold" fontSize="md" mb={8} mt={2}>
+              Alterar foto
+            </Text>
+          </TouchableOpacity>
 
-      <VStack px={6} mt={10} mb={9}>
-        <Heading color="gray.200" fontSize="md" mb={2} px={4}>
-          Alterar senha
-        </Heading>
+          <Input 
+            bg="gray.600"
+            placeholder='Nome'
+          />
+          <Input 
+            bg="gray.600"
+            value='seuemail@gmail.com'
+            isDisabled
+          />
+  
 
-        <Input 
-          bg="gray.600"
-          placeholder="Senha antiga"
-          secureTextEntry
-        />
+          <Heading color="gray.200" alignSelf="flex-start" fontSize="md" mb={2} px={5} mt={6}>
+            Alterar senha
+          </Heading>
 
-        <Input 
-          bg="gray.600"
-          placeholder="Nova senha"
-          secureTextEntry
-        />
+          <Input 
+            bg="gray.600"
+            placeholder="Senha antiga"
+            secureTextEntry
+          />
 
-        <Input 
-          bg="gray.600"
-          placeholder="Confirme a nova senha"
-          secureTextEntry
-        />
+          <Input 
+            bg="gray.600"
+            placeholder="Nova senha"
+            secureTextEntry
+          />
 
-        <Center>
+          <Input 
+            bg="gray.600"
+            placeholder="Confirme a nova senha"
+            secureTextEntry
+          />
+
           <Button title="Atualizar" />
         </Center>
-      </VStack>
       </ScrollView>
     </VStack>
   )
