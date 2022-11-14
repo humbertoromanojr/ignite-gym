@@ -23,8 +23,6 @@ PROJECT IGNITE GYM
 ### MOBILE LIBRARIES
 - <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React. React Native combines the best parts of native development with React, a best-in-class JavaScript library for building user interfaces.
 <br /><br />
-Use a little—or a lot. You can use React Native today in your existing Android and iOS projects or you can create a whole new app from scratch.
-<br /><br />
 
 -   [React Native](https://reactnative.dev/)
     - [React Native SVG](https://github.com/software-mansion/react-native-svg)
@@ -33,6 +31,7 @@ Use a little—or a lot. You can use React Native today in your existing Android
     - [React Native Screen](https://github.com/software-mansion/react-native-screens)
 -   [Expo](https://expo.dev/)
     - [Google fonts](https://docs.expo.dev/guides/using-custom-fonts/#using-a-google-font)
+    - [Image Picker](https://docs.expo.dev/versions/latest/sdk/imagepicker/)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [NativeBase](https://nativebase.io/)
 -   [Babel Plugin Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
