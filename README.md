@@ -32,6 +32,7 @@ PROJECT IGNITE GYM
 -   [Expo](https://expo.dev/)
     - [Google fonts](https://docs.expo.dev/guides/using-custom-fonts/#using-a-google-font)
     - [Image Picker](https://docs.expo.dev/versions/latest/sdk/imagepicker/)
+    - [File System](https://docs.expo.dev/versions/latest/sdk/filesystem/)
 -   [Typescript](https://www.typescriptlang.org/)
 -   [NativeBase](https://nativebase.io/)
 -   [Babel Plugin Module Resolver](https://github.com/tleunen/babel-plugin-module-resolver)
