@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { TouchableOpacity } from 'react-native';
-import { VStack, Center, ScrollView, Text, Skeleton, Heading } from 'native-base'
+import { VStack, Center, ScrollView, Text, Skeleton, Heading, useToast } from 'native-base'
 import * as ImagePicker from 'expo-image-picker'
+import * as FileSystem from 'expo-file-system'
 
 import { ScreenHeader } from '@components/ScreenHeader'
 import { UserPhoto } from '@components/UserPhoto'
@@ -13,6 +14,8 @@ const PHOTO_SIZE = 33;
 export function Profile() {
   const [photoIsLoading, setPhotoIsLoading] = useState(false)
   const [userPhoto, setUserPhoto] = useState('https://github.com/humbertoromanojr.png')
+
+  const toast = useToast()
 
   async function handleUserPhotoSelect() {
     setPhotoIsLoading(true)
@@ -29,11 +32,32 @@ export function Profile() {
       }
 
       if (photoSelected.uri) {
+        const photoInfo = await FileSystem.getInfoAsync(photoSelected.uri)
+        if (photoInfo.size && (photoInfo.size / 1024 / 1024) > 2) {
+          return toast.show({
+            title: 'Imagem muito grande, escolha uma de até 2MB!',
+            placement: 'top',
+            bgColor: 'green.500'
+          })
+        }
+        
         setUserPhoto(photoSelected.uri)
+
+        toast.show({
+          title: 'Successfully load image ;-)',
+          placement: 'top',
+          bgColor: 'green.500'
+        })
       }
-      
+
     } catch (error) {
       console.log('== Profile - handleUserPhotoSelect ==> ', error);
+
+      toast.show({
+        title: 'Unable to load image :-(',
+        placement: 'top',
+        bgColor: 'red.500'
+      })
     
     } finally {
       setPhotoIsLoading(false)
