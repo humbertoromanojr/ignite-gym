@@ -16,7 +16,7 @@ type FormDataProps = {
 }
 
 export function SignUp() {
-  const { control, handleSubmit } = useForm<FormDataProps>();
+  const { control, handleSubmit, formState: { errors } } = useForm<FormDataProps>();
 
   const navigation = useNavigation();
   function handleGoBack() {
@@ -24,7 +24,7 @@ export function SignUp() {
   }
 
   function handleSignUp({ name, email, password, password_confirm }: FormDataProps) {
-    console.log(data);
+    
   }
 
   return (
@@ -56,14 +56,21 @@ export function SignUp() {
           <Controller
             control={control}
             name="name"
+            rules={{
+              required: 'Informe o seu nome',
+              minLength: 4,
+              maxLength: 30,
+            }}
             render={({field: { onChange, value }}) => (
               <Input
                 placeholder="Nome"
+                placeholderTextColor={errors.name?.message ? 'white' : 'gray.300'}
                 keyboardType="default"
                 autoCapitalize="none"
                 autoCorrect={false}
                 onChangeText={onChange}
                 value={value}
+                errorMessage={errors.name?.message}
               />
             )}
           />
@@ -71,14 +78,23 @@ export function SignUp() {
           <Controller
             control={control}
             name="email"
+            rules={{
+              required: 'Informe seu email',
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: 'E-mail inválido',
+              }
+            }}
             render={({field: { onChange, value }}) => (
               <Input
                 placeholder="Email"
+                placeholderTextColor={errors.email?.message ? 'white' : 'gray.300'}
                 keyboardType="email-address"
                 autoCapitalize="none"
                 autoCorrect={false}
                 onChangeText={onChange}
                 value={value}
+                errorMessage={errors.email?.message}
               />
             )}
           />
@@ -86,12 +102,18 @@ export function SignUp() {
           <Controller
             control={control}
             name="password"
+            rules={{
+              required: 'Informe sua senha',
+              minLength: 9,
+            }}
             render={({field: { onChange, value }}) => (
               <Input 
                 placeholder="Senha" 
+                placeholderTextColor={errors.password?.message ? 'white' : 'gray.300'}
                 secureTextEntry 
                 onChangeText={onChange}
                 value={value}
+                errorMessage={errors.password?.message}
               />
             )}
           />          
@@ -99,14 +121,20 @@ export function SignUp() {
           <Controller
             control={control}
             name="password_confirm"
+            rules={{
+              required: 'Confirme sua senha',
+              minLength: 9,
+            }}
             render={({field: { onChange, value }}) => (
               <Input 
                 placeholder="Confirme a senha" 
+                placeholderTextColor={errors.password_confirm?.message ? 'white' : 'gray.300'}
                 secureTextEntry 
                 onChangeText={onChange}
                 value={value}
                 onSubmitEditing={handleSubmit(handleSignUp)}
                 returnKeyType="send"
+                errorMessage={errors.password_confirm?.message}
               />
             )}
           />  
