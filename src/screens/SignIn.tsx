@@ -1,6 +1,8 @@
 import { useNavigation } from '@react-navigation/native'
 import {useForm, Controller} from 'react-hook-form';
 import { VStack, Image, Text, Center, Heading, ScrollView } from 'native-base'
+import { yupResolver } from '@hookform/resolvers/yup'
+import * as yup from 'yup';
 
 import { AuthNavigatorRoutesProps } from '@routes/auth.routes'
 
@@ -9,6 +11,11 @@ type FormDataProps = {
   password: string;
 }
 
+const signInSchema = yup.object({
+  email: yup.string().required('Informe o email.').email('Email é inválido.'),
+  password: yup.string().required('Informe a senha.').min(7, 'Mínimo 7 caracteres.'),
+})
+
 import { Input } from '@components/Input'
 import { Button } from '@components/Button'
 
@@ -16,7 +23,9 @@ import LogoSvg from '@assets/logo.svg'
 import BackgroundImg from '@assets/background.png'
 
 export function SignIn() {
-  const { control, handleSubmit, formState: { errors } } = useForm<FormDataProps>();
+  const { control, handleSubmit, formState: { errors } } = useForm<FormDataProps>({
+    resolver: yupResolver(signInSchema),
+  });
 
   const navigation = useNavigation<AuthNavigatorRoutesProps>()
 
@@ -58,13 +67,6 @@ export function SignIn() {
           <Controller
             control={control}
             name="email"
-            rules={{
-              required: 'Informe seu email',
-              pattern: {
-                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: 'E-mail inválido',
-              }
-            }}
             render={({field: { onChange, value }}) => (
               <Input
                 placeholder="Email"
@@ -82,10 +84,6 @@ export function SignIn() {
           <Controller
             control={control}
             name="password"
-            rules={{
-              required: 'Informe sua senha',
-              minLength: 9,
-            }}
             render={({field: { onChange, value }}) => (
               <Input 
                 placeholder="Senha"
