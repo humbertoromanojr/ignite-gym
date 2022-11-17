@@ -39,6 +39,7 @@ PROJECT IGNITE GYM
 -   [React Navigation](https://reactnavigation.org/docs/getting-started/)
     - [React Navigation Native Stack](https://reactnavigation.org/docs/hello-react-navigation)
     - [React Navigation Bottom Tab Navigator](https://reactnavigation.org/docs/upgrading-from-5.x/#bottom-tab-navigator)
+    - [React Hook Form](https://react-hook-form.com/get-started#Quickstart)
 
 
 ## Demonstration
