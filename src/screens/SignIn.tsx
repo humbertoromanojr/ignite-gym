@@ -60,7 +60,7 @@ export function SignIn() {
         </Center>
 
         <Center mb={10}>
-          <Heading mb={6} color="gray.100">
+          <Heading mb={6} color="gray.100" fontFamily="heading">
             Acesse sua conta
           </Heading>
 

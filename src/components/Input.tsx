@@ -1,4 +1,4 @@
-import { Input as NativeBaseInput, IInputProps, FormControl } from 'native-base'
+import { Input as NativeBaseInput, IInputProps, FormControl, Text } from 'native-base'
 
 type Props = IInputProps & {
   errorMessage?: string | null;
@@ -35,8 +35,8 @@ export function Input({ errorMessage = null, isInvalid, ...rest }: Props) {
         {...rest}
       />
 
-      <FormControl.ErrorMessage>
-        {errorMessage}
+      <FormControl.ErrorMessage> 
+        <Text fontSize={16} fontWeight="bold" color="green.500">{errorMessage}</Text>
       </FormControl.ErrorMessage>
     </FormControl>
   )

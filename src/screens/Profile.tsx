@@ -105,7 +105,7 @@ export function Profile() {
             isDisabled
           />
 
-          <Heading color="gray.200" alignSelf="flex-start" fontSize="md" mb={2} px={1} mt={6}>
+          <Heading color="gray.200" fontFamily="heading" alignSelf="flex-start" fontSize="md" mb={2} px={1} mt={6}>
             Alterar senha
           </Heading>
 

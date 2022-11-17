@@ -21,7 +21,7 @@ const signUpSchema = yup.object({
   name: yup.string().required('Informe o nome.').min(4, 'Mínimo 4 caracteres.'),
   email: yup.string().required('Informe o email.').email('Email é inválido.'),
   password: yup.string().required('Informe a senha.').min(7, 'Mínimo 7 caracteres.'),
-  password_confirm: yup.string().required('Confirme a sua senha.').oneOf([yup.ref('password'), null], 'Senhas diferentes.')
+  password_confirm: yup.string().required('Confirme a senha.').oneOf([yup.ref('password'), null], 'Senhas diferentes.')
 })
 
 export function SignUp() {
@@ -60,7 +60,7 @@ export function SignUp() {
         </Center>
 
         <Center mb={6}>
-          <Heading mb={6} color="gray.100">
+          <Heading mb={6} color="gray.100" fontFamily="heading">
             Crie sua conta
           </Heading>
 
@@ -137,7 +137,7 @@ export function SignUp() {
         </Center>
 
         <Button
-          mt={24}
+          mt={12}
           title="Voltar para o login"
           variant="outline"
           onPress={handleGoBack}

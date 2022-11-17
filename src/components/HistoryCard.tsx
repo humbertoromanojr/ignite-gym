@@ -9,7 +9,7 @@ export function HistoryCard() {
       px={5} py={4} mb={3}
     >
       <VStack flex={1} mr={5}>
-        <Heading fontSize="md" color="white" textTransform="capitalize">
+        <Heading fontSize="md" color="white" textTransform="capitalize" fontFamily="heading">
           Costas
         </Heading>
 
